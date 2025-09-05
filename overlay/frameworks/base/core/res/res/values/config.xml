@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Base config path-->
+<!--frameworks/base/core/res/res/values/config.xml-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--NavBar-->
+    <!--For full software navbar-->
+    <bool name="config_showNavigationBar">true</bool>
+    <!--enable 2 bottom navBar-->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+    <!--Default navBar mode-->
+    <integer name="config_navBarInteractionMode">2</integer>
+    <!-- Return gestue default dp-->
+    <dimen name="config_backGestureInset">24dp</dimen>
+    <!--Display-->
+    <!--Display default FPS-->
+    <integer name="config_defaultRefreshRate">90</integer>
+    <!--max variable FPS-->
+    <integer name="config_defaultPeakRefreshRate">90</integer>
+    <!--Syncronize FPS config-->
+    <bool name="config_refreshRateSynchronizationEnabled">true</bool>
+    <!--Support wide gamut-->
+    <bool name="config_enableWcgMode">true</bool>
+</resources>

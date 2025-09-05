@@ -1,0 +1,15 @@
+# Audio
+persist.vendor.audio.fluence.voicecomm=false
+persist.vendor.audio.voicecall.speaker.stereo=true
+
+# Camera
+persist.vendor.camera.physical.num=4
+
+# Display
+debug.sf.supports_desired_transition_mode=1
+debug.sf.treat_170m_as_sRGB=1
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.set_idle_timer_ms=250
+
+# Radio
+ro.vendor.radio.imei.sv=26

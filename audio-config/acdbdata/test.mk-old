@@ -1,0 +1,68 @@
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Handset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb			\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Bluetooth_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_General_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Global_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Handset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Hdmi_cal.acdb			\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Headset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_Speaker_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/factory/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/factory/MTP_workspaceFile.qwsp
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Bluetooth_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_General_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Global_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Handset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Hdmi_cal.acdb			\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Headset_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_Speaker_cal.acdb		\
+$(LOCAL_PATH)/audio-config/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/holi-mtpsku1-snd-card/MTP_workspaceFile.qwsp
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd	\
+$(LOCAL_PATH)/audio-config/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd	\
+$(LOCAL_PATH)/audio-config/acdbdata/nn_ns_models/fai__2.7.20_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__eai_1.10.pmd
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Global_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Handset_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb
+
+
+PRODUCT_COPY_FILES +=   \
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Bluetooth_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_General_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Global_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Handset_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Hdmi_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Headset_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Speaker_cal.acdb	\
+$(LOCAL_PATH)/audio-config/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_workspaceFile.qwsp
+

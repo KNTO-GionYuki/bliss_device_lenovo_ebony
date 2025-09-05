@@ -1,0 +1,68 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.extract import extract_fns_user_type
+from extract_utils.extract_star import extract_star_firmware
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/lenovo/rhodep',
+    'vendor/lenovo/sm6375-common',
+    'vendor/qcom/opensource/display',
+]
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc': blob_fixup()
+        .regex_replace('sec', 'samsung')
+        .regex_replace('class hal\n    user nfc', 'override\n    class hal\n    user nfc'),
+    'vendor/lib64/libBSTSWAD.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/lib64/libmot_chi_desktop_helper.so': blob_fixup()
+        .add_needed('libgui_shim_vendor.so'),
+    'vendor/lib64/sensors.moto.so': blob_fixup()
+        .add_needed('libbase_shim.so'),
+}  # fmt: skip
+
+extract_fns: extract_fns_user_type = {
+    r'(bootloader|radio)\.img': extract_star_firmware,
+}
+
+module = ExtractUtilsModule(
+    'ebony',
+    'lenovo',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+    extract_fns=extract_fns,
+    add_firmware_proprietary_file=True,
+    add_generated_carriersettings=True,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device_with_common(
+        module, 'sm6375-common', module.vendor
+    )
+    utils.run()

@@ -1,0 +1,63 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_PATH := device/lenovo/ebony
+
+# Inherit from lenovo sm6375-common
+include device/lenovo/sm6375-common/BoardConfigCommon.mk
+
+# Audio
+AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := LenovoA301LV
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+#ODM_MANIFEST_SKUS += b d dn n
+#ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
+#ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
+#ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
+#ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
+
+# Kernel
+#BOARD_KERNEL_CMDLINE += androidboot.hab.product=rhodep
+BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image:/vendor/bt_firmware
+TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-rhodep.config
+
+# Kernel Modules
+#BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+#BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
+#BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+#BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+# Prebuilt kernel modules
+
+#BT
+BOARD_HAVE_BLUETOOTH_QCOM := true
+
+# Partitions
+BOARD_MOT_DP_GROUP_SIZE := 8608808960 # (BOARD_SUPER_PARTITION_SIZE - 4MB)
+BOARD_SUPER_PARTITION_SIZE := 8613003264
+
+# Properties
+#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+#TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+#TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
+
+# Security
+BOOT_SECURITY_PATCH := 2025-06-13
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+
+# Verified Boot
+BOARD_AVB_ROLLBACK_INDEX := 29
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 29
+
+# inherit from the proprietary version
+include vendor/lenovo/ebony/BoardConfigVendor.mk
+
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
