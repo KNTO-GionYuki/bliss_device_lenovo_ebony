@@ -18,6 +18,8 @@ PRODUCT_AAPT_CONFIG := normal xhdpi nodpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi nodpi
 
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
